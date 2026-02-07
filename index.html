@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Carol 💖</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff4d6d, #ffb3c6);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  button {
+    background: white;
+    color: #ff4d6d;
+    border: none;
+    padding: 15px 35px;
+    font-size: 22px;
+    border-radius: 30px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  #loveMessage {
+    display: none;
+    font-size: 28px;
+    margin-top: 30px;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Hey Carol 💕</h1>
+<p>It's Klausy here 😘</p>
+<p>You make my life brighter every day ✨</p>
+
+<h1>Will you be my Valentine 💌<br>and my official girlfriend? 💍</h1>
+
+<button onclick="showLove()">YES 😍</button>
+<button onclick="showLove()">OF COURSE 💖</button>
+
+<div id="loveMessage">
+  💕 I LOVE YOU, Carol! 😭💖<br>
+  You just made me the happiest person alive! 💋<br>
+  — Klausy
+</div>
+
+<!-- Love song -->
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function showLove() {
+  document.getElementById("loveMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
